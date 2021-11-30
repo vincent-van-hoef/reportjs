@@ -6,7 +6,6 @@
 #'
 #' @export
 dropdown <- function(vector, selected = NULL,
-                     type = c("text", "img", "iframe"),
                      frame_height = "500", frame_width = "100%", align_right = FALSE,
                      dropup_auto = TRUE, header = FALSE, live_search = FALSE, box_width = FALSE,
                      live_search_style = "contains", show_tick = FALSE, size = "auto",
@@ -30,7 +29,6 @@ dropdown <- function(vector, selected = NULL,
 
   out <- htmlwidgets::prependContent(widg, buildHTML(choices = vector,
                                                      selected = selected,
-                                                     type = type,
                                                      dropdownAlignRight = align_right,
                                                      dropupAuto = dropup_auto,
                                                      header = header,

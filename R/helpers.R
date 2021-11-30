@@ -18,7 +18,7 @@ selectOptions <- function(choices, selected = NULL) {
 
 
 #' @import htmltools
-buildHTML <- function(choices, selected = NULL, type = c("text", "img", "iframe"),
+buildHTML <- function(choices, selected = NULL,
                       height = "500", width = "100%", dropdownAlignRight = FALSE,
                       dropupAuto = TRUE, header = FALSE, liveSearch = FALSE, boxWidth = FALSE,
                       liveSearchStyle = c("contains", "startsWith"), showTick = FALSE, size = "auto",
@@ -52,21 +52,6 @@ buildHTML <- function(choices, selected = NULL, type = c("text", "img", "iframe"
     sel <- choices[index]
   }
 
-  if (type == "text") {
-    js <- paste0('$(document).ready(function(){
-                  $("#', id1, '").change(function(){
-                  $("#', id2, '").text($(this).val());
-                  });
-});')
-
-    out <- htmltools::tags$html(select_tag,
-                                htmltools::p(sel,
-                       id = id2),
-                     htmltools::tags$script(htmlwidgets::JS(js)))
-
-    return(htmltools::renderTags(out, indent = FALSE))
-
-  } else if (type == "img") {
     js <- paste0('$(document).ready(function(){
                  $("#', id1, '").change(function(){
                  $("img[name=', id2, ']").attr("src",$(this).val());
@@ -79,21 +64,4 @@ buildHTML <- function(choices, selected = NULL, type = c("text", "img", "iframe"
                          width = as.character(width)),
                          htmltools::tags$script(htmlwidgets::JS(js)))
     return(htmltools::renderTags(out, indent = FALSE))
-  } else if (type == "iframe") {
-    js <- paste0('$(document).ready(function(){
-                   $("#', id1, '").change(function(){
-                   $("#', id2, '").attr("src",$(this).val());
-                   });
-    });')
-
-    out <- htmltools::tags$html(select_tag,
-                                htmltools::tags$iframe(src = sel,
-                                 frameborder = "0",
-                                 height = height,
-                                 width = width,
-                                 id = id2),
-                                htmltools::tags$script(htmlwidgets::JS(js)))
-    return(htmltools::renderTags(out, indent = FALSE))
-
-  }
 }
