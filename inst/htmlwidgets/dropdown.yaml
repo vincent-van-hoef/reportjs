@@ -4,14 +4,10 @@
     version: 3.5.1
     src: htmlwidgets/jquery
     script: jquery.min.js
-  - name: popper
-    version: 1.12.9
-    src: htmlwidgets/popper
-    script: popper.min.js
   - name: bootstrap
-    version: 4.0.0
+    version: 3.4.1
     src: htmlwidgets/bootstrap
-    script: bootstrap.min.js
+    script: bootstrap.js
     stylesheet: bootstrap.min.css
   - name: bootstrap-select
     version: 1.13.14
