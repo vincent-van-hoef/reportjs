@@ -10,10 +10,12 @@ First create a named vector with the relative paths to the figures as elements. 
 plots <- list.files("../Results", full.names = TRUE)
 names(plots) <- c("ADA", "AXIN1", "C5a")
 
-reportjs::dropdown(plots, style = "btn-info", selected = "C5a")
+reportjs::dropdown(plots, style = "btn-info", selected = "C5a", frame_width = "75%", height = "5px")
 ```
 
 ## Drawbacks
+
+BOTH PARTIALLY FIXED BY ADDING SINZING INFO IN FUNCTION CALL
 
 This works best with the newer bookdown formats such as bs4_book because the sizing of the figures is more stable in those formats. In for example gitbook; the figure stretches when the size of the html is changed..
 
