@@ -20,7 +20,7 @@ dropdown <- function(vector, selected = NULL,
     name = 'dropdown',
     x = opts,
     width = width,
-    height = height,
+    height = "0",
     package = 'reportjs',
     elementId = elementId
   )
