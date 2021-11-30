@@ -4,10 +4,10 @@
     version: 3.5.1
     src: htmlwidgets/jquery
     script: jquery.min.js
-  - name: bootstrap
-    version: 3.4.1
-    src: htmlwidgets/dropdown
-    script: bootstrap.min.js
+ # - name: bootstrap
+  #  version: 3.4.1
+  #  src: htmlwidgets/dropdown
+  #  script: bootstrap.min.js
   - name: bootstrap-select
     version: 1.13.14
     src: htmlwidgets/bootstrap-select
