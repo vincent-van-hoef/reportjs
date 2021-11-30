@@ -19,15 +19,10 @@ dropdown <- function(vector, selected = NULL,
   widg <- htmlwidgets::createWidget(
     name = 'dropdown',
     x = opts,
-    #width = width,
-    #height = "0",
+    width = width,
+    height = height,
     package = 'reportjs',
-    elementId = elementId,
-    sizingPolicy = htmlwidgets::sizingPolicy(
-      defaultWidth = "100%",
-      padding = 0,
-      browser.fill = TRUE)
-  )
+    elementId = elementId)
 
   # Prepend the HTML content to the widget
 

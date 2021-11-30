@@ -60,7 +60,7 @@ buildHTML <- function(choices, selected = NULL,
     out <- htmltools::tags$html(select_tag,
                                 htmltools::img(src = sel,
                          name = id2,
-                         height = "0",
+                         height = as.character(height),
                          width = as.character(width)),
                          htmltools::tags$script(htmlwidgets::JS(js)))
     return(htmltools::renderTags(out, indent = FALSE))
