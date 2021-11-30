@@ -19,7 +19,7 @@ selectOptions <- function(choices, selected = NULL) {
 
 #' @import htmltools
 buildHTML <- function(choices, selected = NULL,
-                      height = "500", width = "100%", dropdownAlignRight = FALSE,
+                      height = "100%", width = "100%", dropdownAlignRight = FALSE,
                       dropupAuto = TRUE, header = FALSE, liveSearch = FALSE, boxWidth = FALSE,
                       liveSearchStyle = c("contains", "startsWith"), showTick = FALSE, size = "auto",
                       style = NULL) {
