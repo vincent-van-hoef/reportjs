@@ -6,7 +6,7 @@
 #'
 #' @export
 dropdown <- function(vector, selected = NULL,
-                     frame_height = "400", frame_width = "100%", align_right = FALSE,
+                     frame_height = "100%", frame_width = "100%", align_right = FALSE,
                      dropup_auto = TRUE, header = FALSE, live_search = FALSE, box_width = FALSE,
                      live_search_style = "contains", show_tick = FALSE, size = "auto",
                      style = NULL, width = NULL, height = NULL, elementId = NULL, ...) {
@@ -36,7 +36,8 @@ dropdown <- function(vector, selected = NULL,
                                                      showTick = show_tick,
                                                      size = size,
                                                      style = style,
-                                                     height = frame_height, width = frame_width
+                                                     height = frame_height,
+                                                     width = frame_width
   ))
 
   out
