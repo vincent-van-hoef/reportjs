@@ -19,8 +19,8 @@ dropdown <- function(vector, selected = NULL,
   widg <- htmlwidgets::createWidget(
     name = 'dropdown',
     x = opts,
-    width = "10px",
-    height = "10px",
+    width = width,
+    height = height,
     package = 'reportjs',
     elementId = elementId)
 
