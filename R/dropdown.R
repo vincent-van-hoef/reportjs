@@ -9,7 +9,7 @@ dropdown <- function(vector, selected = NULL,
                      frame_height = "auto", frame_width = "100%", align_right = FALSE,
                      dropup_auto = TRUE, header = FALSE, live_search = FALSE, box_width = FALSE,
                      live_search_style = "contains", show_tick = FALSE, size = "auto",
-                     style = NULL, width = "10px", height = "10px", elementId = NULL, ...) {
+                     style = NULL, width = "10", height = "10", elementId = NULL, ...) {
 
   # forward options using x
   opts = list(
