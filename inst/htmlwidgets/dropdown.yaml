@@ -8,4 +8,4 @@
     version: 1.13.14
     src: htmlwidgets/bootstrap-select
     script: bootstrap-select.min.js
-    stylesheet: bootstrap.min.css
+    stylesheet: bootstrap-select.min.css
