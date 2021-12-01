@@ -4,7 +4,14 @@ This packages allows for dropdown menus to select which figure to show in Bookdo
 
 ## Usage
 
-First create a named vector with the relative paths to the figures as elements. The names of the vector will be the elements of the dropdown menu.
+Install the package with devtools.
+
+```
+devtools::install_github("vincent-van-hoef/reportjs")
+library("reportjs")
+```
+
+In a R chunk, create a named vector with the relative paths to the figures as elements. The names of the vector will be the elements of the dropdown menu.
 
 ```{r}
 plots <- list.files("../Results", full.names = TRUE)
