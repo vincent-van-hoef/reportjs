@@ -1,6 +1,6 @@
 ## Aim
 
-This packages allows for dropdown menus to select which figure to show in Bookdown and Rmarkdown reports. It is based on bootstrap-select and the Bootstrap toolkit. For now, it consists of a single function to be used in a R chunk in the Rmd file. This adaptation is heavily based on the package bsselectR which did not work for pdf figures.
+This packages allows for dropdown menus to select which figure to show in Bookdown and Rmarkdown reports without having to use something like Shiny. This means this can also be used in stand-aline offline reports. It is based on bootstrap-select and the Bootstrap toolkit. For now, it consists of a single function to be used in a R chunk in the Rmd file. This adaptation is heavily based on the package bsselectR which did not work for pdf figures.
 
 ## Usage
 
