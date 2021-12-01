@@ -15,4 +15,5 @@ reportjs::dropdown(plots, style = "btn-info", selected = "C5a", live_search = TR
 
 ## Drawbacks
 
-Knitted Rmd reports do no show the figures in the Rstudio viewer, only in a browser.
+- Knitted Rmd reports do no show the figures in the Rstudio viewer, only in a browser.
+- All figures of course need to be prerendered and available to the Rmd files; i.e you will have to deliver the report and results together and keep them in the same position relative to each other.
